@@ -53,7 +53,7 @@ app.get("/api/tableLink/:waitList", function(req, res) {
   return res.json(false);
 });
 
-// Create New Characters - takes in JSON input
+// Create New Customer - takes in JSON input
 app.post("/api/waitLink", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body-parser middleware
@@ -61,7 +61,7 @@ app.post("/api/waitLink", function(req, res) {
 
   console.log(newcustomer);
 
-  // We then add the json the user sent to the character array
+  // We then add the json the user sent to the customer array
   customers.push(newcustomer);
 
   // We then display the JSON to the users
