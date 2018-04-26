@@ -8,26 +8,46 @@ var path = require("path");
 
 var app = express();
 var PORT = 3000;
+console.log("you are connected to " + PORT);
 
 //Set up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 
 //Customers
     //customername
     //phoneNumber
     //customerEmail
     //customerID
+var customers = [
+{
+    customerName: "",
+    phoneNumber: "",
+    customerEmail: "",
+    customerID: ""
+
+}
+];
 
 //Routes
 
 //Route that sends the user first to the home
-
-//route-add table page/make reservation
-
-//route-view tables
-
+app.get("/", function(req,res){
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+//route-add table page/make reservation reserve.html
+app.get("/reserve", function(req,res){
+    res.sendFile(path.join(__dirname, "reserve.html"));
+});
+//route-view tables tables.html
+app.get("/tables", function(req,res){
+    res.sendFile(path.join(__dirname, "tables.html"));
+});
 //route-API table list
 
 //route-API Wait list
+
+//route-clear tables
 
 //Displays tables
 
