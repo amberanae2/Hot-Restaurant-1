@@ -30,7 +30,7 @@ var customers = [
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
   // res.send("Hot Resturant!")
-  res.sendFile(path.join(__dirname, "./hotResturant1.html"));
+  res.sendFile(path.join(__dirname, "./index.html"));
 });
 
 // Displays all customers
