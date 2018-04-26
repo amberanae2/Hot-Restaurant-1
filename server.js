@@ -76,13 +76,8 @@ var newcustomer = req.body;
  res.json(newcustomer);
 });
 
-// Starts the server to begin listening
-// =============================================================
-// app.listen(PORT, function() {
-//  console.log("App listening on PORT " + PORT);
-// }); 
 
-/////
+
 
 function clearTable(){
 
@@ -91,6 +86,7 @@ function clearTable(){
 
 }
 
+// Starts the server to begin listening
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
