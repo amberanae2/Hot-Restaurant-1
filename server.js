@@ -50,7 +50,7 @@ app.get("/api/customers", function(req, res) {
     console.log(chosen);
   
     for (var i = 0; i < customers.length; i++) {
-      if (chosen === customers[i].routeName) {
+      if (chosen === customers[i].customerName) {
         return res.json(customers[i]);
       }
     }
@@ -78,9 +78,9 @@ var newcustomer = req.body;
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
- console.log("App listening on PORT " + PORT);
-}); 
+// app.listen(PORT, function() {
+//  console.log("App listening on PORT " + PORT);
+// }); 
 
 /////
 
