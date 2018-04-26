@@ -27,6 +27,8 @@ var PORT = 3000;
 
 //route-API table list
 
+
+
 //route-API Wait list
 
 //Displays tables
@@ -35,6 +37,15 @@ var PORT = 3000;
 
 //req.body hosts is equal to the JSON post sent from the user
 
+
+/////
+
+function clearTable(){
+
+    var currentURL = window.location.origin;
+    $.ajax({url: currentURL + "/api/clear", method: "POST"})
+
+}
 
 
 
