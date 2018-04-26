@@ -77,8 +77,6 @@ var newcustomer = req.body;
 });
 
 
-
-
 function clearTable(){
 
     var currentURL = window.location.origin;
