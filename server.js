@@ -45,6 +45,8 @@ app.get("/tables", function(req,res){
 });
 //route-API table list
 
+
+
 //route-API Wait list
 
 //route-clear tables
@@ -55,6 +57,15 @@ app.get("/tables", function(req,res){
 
 //req.body hosts is equal to the JSON post sent from the user
 
+
+/////
+
+function clearTable(){
+
+    var currentURL = window.location.origin;
+    $.ajax({url: currentURL + "/api/clear", method: "POST"})
+
+}
 
 
 
