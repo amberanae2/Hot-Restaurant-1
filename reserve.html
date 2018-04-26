@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Make A Reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- plain-css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">
+            <span class="glyphicon glyphicon-fire"></span>Hot Restaurant
+
+        </h1>
+        <hr>
+        <h2 class="text-center">Make Your Reservation</h2>
+        
+        <div class="text-center">
+        <a href="index.html">
+                <button type="button" class="btn btn-lg btn-light"><span class="glyphicon glyphicon-home"></span> Home</button>
+        </a>
+    
+        <a href="tables.html">
+                <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button>
+        </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lrg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Reserve a Table</h4>
+                <div class+"panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text"  class="form-control" id="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="PhoneNumber">Phone Number</label>
+                            <input type="text" class="form-control" id="PhoneNumber">
+                        </div>
+                        <div class="form-group">
+                                <label for="Email">Email</label>
+                                <input type="text" class="form-control" id="Email">
+                        </div>
+                        <div class="form-group">
+                                <label for="UniqueID">UniqueID</label>
+                                <input type="text" class="form-control" id="UniqueID">
+                        </div>
+                        <button type="submit" class="btn btn-light submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
